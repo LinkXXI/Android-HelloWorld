@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".RootActivityFragment">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_hello_world" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_tap_me"
+        android:text="@string/btn_tap_me_str"
+        android:onClick="btnTapMePressed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:minWidth="@dimen/btn_width" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_time_tapped"
+        android:id="@+id/lbl_times_tapped"
+        android:layout_marginTop="86dp"
+        android:layout_below="@+id/lbl_hello_world"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lbl_count"
+        android:layout_below="@+id/lbl_times_tapped"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_dont_tap_me"
+        android:text="@string/btn_dont_tap_me"
+        android:layout_alignTop="@+id/btn_tap_me"
+        android:layout_alignParentEnd="true"
+        android:minWidth="@dimen/btn_width"
+        android:onClick="btnDontTapMePressed" />
+
+</RelativeLayout>
